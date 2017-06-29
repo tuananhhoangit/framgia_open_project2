@@ -1,0 +1,60 @@
+<div class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><h1><%= t ".glob" %></h1></a>
+        </div>
+        <div class="search">
+          <form>
+            <input type="text" value="<%= t".search" %>" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+            <input type="submit" value="">
+          </form>
+        </div>
+        <div class="social">
+          <ul>
+            <li><%= link_to "", "#", class: "facebook" %></li>
+            <li><%= link_to "", "#", class: "facebook twitter" %></li>
+            <li><%= link_to "", "#", class: "facebook chrome" %></li>
+            <li><%= link_to "", "#", class: "facebook in" %></li>
+            <li><%= link_to "", "#", class: "facebook beh" %></li>
+            <li><%= link_to "", "#", class: "facebook vem" %></li>
+            <li><%= link_to "", "#", class: "facebook yout" %></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><%= link_to t(".home"), root_path %></li>
+            <li><%= link_to t(".users"), "#" %></li>
+            <li><%= link_to t(".about"), about_path %></li>
+            <li><%= link_to t(".contact"), contact_path %></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= t "account" %><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to t(".profile"), "#" %></li>
+                <li><%= link_to t(".settings"), "#" %></li>
+                <li class="divider"></li>
+                <li><%= link_to t(".logout"), "#" %></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+  <!--head-bottom-->
+</div>
